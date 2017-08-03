@@ -43,10 +43,7 @@ keybits=2048
 openssl=$(which openssl)
 
 function maxdays() {
-	nowyear=$(date +%Y)
-	years=$(expr 2032 - $nowyear)
-	days=$(expr $years '*' 365)
-
+	days=$(100 '*' 365)
 	echo $days
 }
 
